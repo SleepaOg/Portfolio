@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cloud Studio's</title>
+  <link rel="icon" type="image/png" href="assents/favicon-16x16.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#sobre" class="logo-link">
+      <img src="assents/Logo sem fundo.png" alt="Cloud Studio's" class="brand" />
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="#projetos" class="nav-link">Projetos</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main class="snap-container">
+  <section id="sobre" class="page page-sobre">
+    <div class="paper">
+      <div class="paper-content">
+        <p class="eyebrow">Estúdio digital full-service</p>
+        <h1>Experiências web com estética minimalista e performance real.</h1>
+        <p>A <strong class="highlight">Cloud Studio's</strong> integra design, engenharia e estratégia para lançar produtos digitais elegantes e escaláveis. Atuamos de ponta a ponta, do discovery ao go-live, priorizando interfaces acessíveis, rápidas e orientadas a resultados.</p>
+        <ul class="feature-list">
+          <li>Design systems e identidades digitais consistentes.</li>
+          <li>Aplicações em nuvem com observabilidade e segurança.</li>
+          <li>Experiências orientadas por dados e pesquisa de usuário.</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn-primary" href="#contato">Iniciar um projeto</a>
+          <a class="ghost-link" href="#projetos">Ver portfólio completo</a>
+        </div>
+        <div class="stats-grid" aria-label="Indicadores da Cloud Studio's">
+          <div>
+            <p class="stat-label">Projetos lançados</p>
+            <p class="stat-value">+80</p>
+          </div>
+          <div>
+            <p class="stat-label">Satisfação média</p>
+            <p class="stat-value">4,9/5</p>
+          </div>
+        </div>
+      </div>
+      <div class="paper-logo">
+        <img src="assents/Logo sem fundo.png" alt="Logo Cloud Studio's">
+      </div>
+    </div>
+  </section>
+
+      <section id="projetos" class="page page-projetos">
+    <div class="paper">
+      <div class="section-heading">
+        <p class="eyebrow">Case em destaque</p>
+        <h2>TaskFlow traduz proposito em produtividade.</h2>
+        <p>Destacamos o produto que melhor representa nossa abordagem integrada de discovery, design autoral e engenharia robusta.</p>
+      </div>
+      <div class="projects-list">
+        <article class="proj-card">
+          <a href="https://taskflow33.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <img src="assents/Logo TaskFlow.png" alt="TaskFlow">
+          </a>
+          <div class="proj-body">
+            <div class="proj-head">
+              <h3>TaskFlow - Orquestracao de produtividade</h3>
+              <span class="proj-tag">Operacoes</span>
+            </div>
+            <p>Aplicacao web para squads acompanharem objetivos, rituais e riscos com dashboards personalizaveis e alertas proativos.</p>
+            <ul class="proj-stack">
+              <li>Vue</li>
+              <li>Firebase</li>
+              <li>Chart.js</li>
+              <li>Cloud Functions</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="page page-contato">
+    <div class="paper">
+      <div class="section-heading">
+        <p class="eyebrow">Vamos conversar</p>
+        <h2>Conte sobre o desafio e montamos um roadmap personalizado.</h2>
+        <p>Respondemos em até 24h úteis. Se preferir, escolha um dos canais abaixo.</p>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/mjkadybq" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="_replyto" placeholder="Seu e-mail" required>
+        <textarea name="mensagem" placeholder="Sua mensagem" rows="6" required></textarea>
+        <button class="btn-primary" type="submit">Enviar</button>
+      </form>
+      <div class="contact-info">
+        <div>
+          <p class="stat-label">E-mail</p>
+          <a href="mailto:bielabs2009@gmail.com">bielabs2009@gmail.com</a>
+        </div>
+        <div>
+          <p class="stat-label">WhatsApp</p>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer">+55 61992537545</a>
+        </div>
+        <div>
+          <p class="stat-label">Endereço fiscal</p>
+          <p>Brasília-DF · Operamos remotamente</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="socials">
+      <a href="https://github.com/SleepaOg" target="_blank" rel="noopener noreferrer" title="GitHub"><img src="assents/github.png" alt="GitHub"></a>
+      <a href="https://www.instagram.com/gb.barboza_/" target="_blank" rel="noopener noreferrer" title="Instagram"><img src="assents/instagram.png" alt="Instagram"></a>
+      <a href="https://www.linkedin.com/in/gabriel-almeida-809a50368/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><img src="assents/linkedin.png" alt="LinkedIn"></a>
+    </div>
+    <p class="footer-note">Projetado para entregar clareza estratégica, velocidade e impacto visual.</p>
+    <div class="copyright">© 2025 Cloud Studio's · Todos os direitos reservados</div>
+  </div>
+</footer>
+
+<script>
+const sections = document.querySelectorAll('.page');
+const navLinks = document.querySelectorAll('.nav-link');
+function onScroll(){
+  const pos = window.scrollY + window.innerHeight/2;
+  sections.forEach(sec => {
+    const top = sec.offsetTop;
+    const bottom = top + sec.offsetHeight;
+    const id = sec.getAttribute('id');
+    const link = document.querySelector('.nav-link[href="#'+id+'"]');
+    if(pos >= top && pos < bottom){
+      navLinks.forEach(a=>a.classList.remove('active'));
+      if(link) link.classList.add('active');
+    }
+  });
+}
+window.addEventListener('scroll', onScroll);
+document.addEventListener('DOMContentLoaded', onScroll);
+</script>
+</body>
+</html>
